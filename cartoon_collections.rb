@@ -23,5 +23,6 @@ def find_the_cheese(arr)
   arr.find { |value|
     if value == cheese_types
       return value
+    end
   }
 end
