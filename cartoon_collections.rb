@@ -21,7 +21,7 @@ end
 def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
   arr.any? { |value|
-    if cheese_types.include?(value) 
+    if cheese_types.find(value) 
       return value
     end
   }
