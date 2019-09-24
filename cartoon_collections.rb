@@ -20,11 +20,13 @@ end
 
 def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  match_value = ""
   arr.any? { |value|
     if cheese_types.include?(value) 
-      return value
+      match_value = value
     else
-      return nil
+      match_value = nil
     end
   }
+  match_value
 end
