@@ -20,8 +20,9 @@ end
 
 def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  arr.find { |value|
-    if value == cheese_types
+  arr.find { |value1|
+    if value == cheese_types.each { |value2|
+    }
       return value
     end
   }
