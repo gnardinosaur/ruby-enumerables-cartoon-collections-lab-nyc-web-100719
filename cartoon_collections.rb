@@ -28,5 +28,5 @@ def find_the_cheese(arr)
       #match_value = nil
     end
   }
-  match_value
+  p match_value
 end
