@@ -24,8 +24,8 @@ def find_the_cheese(arr)
   arr.any? { |value|
     if cheese_types.include?(value) 
       match_value = value
-    else
-      match_value = nil
+    #else
+      #match_value = nil
     end
   }
   match_value
