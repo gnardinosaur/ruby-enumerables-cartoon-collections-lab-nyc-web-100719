@@ -18,26 +18,16 @@ def long_planeteer_calls(arr)
   }
 end
 
-#def find_the_cheese(arr)
-# cheese_types = ["cheddar", "gouda", "camembert"]
-#  match_value = ""
-#  arr.any? { |value|
-#    if cheese_types.include?(value) 
-#      match_value = value
-#   else
-#      match_value = nil
-#    end
-#  }
-#  match_value
-#end
-
 def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  
+  match_value = ""
   arr.any? { |value|
-    if cheese_types.find(value) 
-      return value 
+    if cheese_types.include?(value) 
+      match_value = value
+    else
+      match_value = nil
     end
   }
-
+  match_value
 end
+
