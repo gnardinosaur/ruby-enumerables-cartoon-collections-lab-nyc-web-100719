@@ -20,9 +20,7 @@ end
 
 def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if arr.any? { |value|
-    first_match = cheese_types.include?(value)
+  arr.any? { |value|
+    cheese_types.include?(value)
   }
-    p first_match
-  end
 end
